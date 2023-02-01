@@ -1,24 +1,22 @@
-let count = [] 
 
-const maxVisor = 10
+var count = []
 
+
+var total = document.getElementById('total')
+var acumulador = document.getElementById('res1')
 function AddNumber(num) {
-    var total = document.getElementById('total')
-    total.removeAttribute('hidden')
-    if (total.innerHTML.length < maxVisor) {
-        total.innerHTML += num     
+    if (total.innerHTML.length < 10){
+        total.innerHTML += num
     }
-    
 }
 
 function CalcAction(action) {
-    if (total.innerHTML.length == 0) {
+    if (total.innerHTML.length == 0){
         return
+    } else {
+        acumulador.innerHTML += `${total.innerHTML} ${action}`
+        count.push(Number(total.innerHTML))
+        total.innerHTML = ''
+        window.alert(count)
     }
-
-    count.push(Number(total.innerHTML))
-}
-
-function resultado() {
-    window.alert(count)
 }
