@@ -83,15 +83,15 @@ td {
 }
 
 td:hover {
-    background-color: white;
-    color: black;
+    background-color: #3F3E3C;
     cursor: pointer;
     
 }
 
 td:active {
     transform: scale(95%);
-    
+    background-color: white;
+    color: var(--a4);
 }
 
 
