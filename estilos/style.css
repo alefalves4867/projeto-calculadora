@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*FIRST MOBILE*/
+/*PALETA DE CORES: 
+  A1: #AAA8AD#AAA8AD
+  A2: #59595B
+  A3: #3F3E3C
+  A4: #1E1F23
+  A5: #0D0D0D*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --a1: #AAA8AD;
+    --a2: #59595B;
+    --a3: #3F3E3C;
+    --a4: #1E1F23;
+    --a5: #0D0D0D;
+}
+
+html, body, main {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background-image: linear-gradient(to top, var(--a5), var(--a3));
+    position: relative;
+}
+
+#corp {
+
+    width: 280px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+header {
+    background-color: white;
+    height: 28%;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    height: 72%;
+    width: 100%;
+
+    
+}
+
+td {
+    background-color: var(--a5);
+    text-align: center;
+    width: calc(100% / 4);
+    color: white;
+    font-size: 1.2em;
+
+}
+
+td:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    
+}
+
+td:active {
+    transform: scale(95%);
+    background-color: white;
+}
+
+.claro {
+    background-color: var(--a4);
+}
+
+.claro2 {
+    background-color: rgb(2, 155, 155);
+}
