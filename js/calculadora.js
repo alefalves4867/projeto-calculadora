@@ -17,6 +17,17 @@ function CalcAction(action) {
         acumulador.innerHTML += ` ${total.innerHTML} ${action}`
         count.push(Number(total.innerHTML))
         total.innerHTML = ''
-        window.alert(count)
+       
     }
+}
+
+function c() {
+    total.innerHTML = ''
+    acumulador.innerHTML = ''
+}
+
+function ce() {
+    total.innerHTML = ''
+    var acm = document.getElementById('res1').innerHTML
+    acm = acm.substring(0, acm.innerHTML.length -1)
 }
