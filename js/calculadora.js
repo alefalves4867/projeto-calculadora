@@ -1,6 +1,6 @@
 
 var count = []
-
+var soma = 0
 
 var total = document.getElementById('total')
 var acumulador = document.getElementById('res1')
@@ -11,14 +11,18 @@ function AddNumber(num) {
 }
 
 function CalcAction(action) {
+  
     if (total.innerHTML.length == 0){
         return
     } else {
         acumulador.innerHTML += ` ${total.innerHTML} ${action}`
         count.push(Number(total.innerHTML))
-        total.innerHTML = ''
+        
         
     }
+    
+    total.innerHTML = ''
+    
 
 }
 
@@ -39,6 +43,22 @@ function ce() {
 }
 
 function resultado() {
-    count.push(Number(total.innerHTML))
-    window.alert(count)
+    if (count.length == 0) {
+        return
+    } else {
+
+        if (isNaN(count.length -1)) {
+            count.pop()
+        }
+        
+        count.push(Number(total.innerHTML))
+        total.innerHTML = ''
+        
+        for (var i = 0; i < count.length; i++){
+            soma += count[i]
+        }
+        
+        
+        window.alert(soma)
+    }
 }
