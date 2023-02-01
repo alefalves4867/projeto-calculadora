@@ -11,46 +11,45 @@
     <main>
     <div id="corp">
         <header>
-            <output>
-
-            </output>
-            <div id="res">
-
+            <div id="res1">
+                <p>Salam</p>
             </div>
+            <div id="total" hidden></div>
         </header>
         
             <table>
                 <tr>
-                    <td class="claro">C</td>
-                    <td class="claro">CE</td>
-                    <td class="claro">%</td>
-                    <td class="claro">/</td>
+                    <td class="claro" onclick="c()">C</td>
+                    <td class="claro" onclick="ce()">CE</td>
+                    <td class="claro" onclick="CalcAction('%')">%</td>
+                    <td class="claro" onclick="CalcAction('/')">/</td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td class="claro">x</td>
+                    <td onclick="AddNumber(7)">7</td>
+                    <td onclick="AddNumber(8)">8</td>
+                    <td onclick="AddNumber(9)">9</td>
+                    <td class="claro" onclick="CalcAction('x')">x</td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td class="claro">-</td>
+                    <td id="quatro" onclick="AddNumber(4)">4</td>
+                    <td id="cinco" onclick="AddNumber(5)">5</td>
+                    <td id="seis" onclick="AddNumber(6)">6</td>
+                    <td class="claro" onclick="CalcAction('-')">-</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td class="claro">+</td>
+                    <td onclick="AddNumber(1)">1</td>
+                    <td onclick="AddNumber(2)">2</td>
+                    <td onclick="AddNumber(3)">3</td>
+                    <td class="claro" onclick="CalcAction('+')">+</td>
                 </tr>
                 <tr>
-                    <td colspan="2">0</td>
-                    <td>.</td>
-                    <td class="claro2">=</td>
+                    <td colspan="2" onclick="AddNumber(0)">0</td>
+                    <td onclick="flutuante()">.</td>
+                    <td class="claro2" onclick="resultado()">=</td>
                 </tr>
             </table>
         </div>
     </main>
+    <script src="js/calculadora.js"></script>
 </body>
 </html>

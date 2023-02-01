@@ -35,7 +35,7 @@ main {
 
 #corp {
 
-    width: 280px;
+    width: 300px;
     height: 450px;
     position: absolute;
     top: 50%;
@@ -48,6 +48,20 @@ header {
     background-color: white;
     height: 28%;
     width: 100%;
+}
+
+#res1 {
+    text-align: right;
+    padding: 6px;
+    color: var(--a2);
+    font-size: 1.2em;
+}
+
+#total {
+    font-size: 3em;
+    text-align: right;
+    padding-right: 10px;
+    color: var(--a5);
 }
 
 table {
@@ -64,7 +78,8 @@ td {
     width: calc(100% / 4);
     color: white;
     font-size: 1.2em;
-
+    transition: width 10s, height 10s;
+    transition-timing-function: ease;
 }
 
 td:hover {
