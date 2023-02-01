@@ -15,17 +15,29 @@ function CalcAction(action) {
         return
     } else {
         acumulador.innerHTML += ` ${total.innerHTML} ${action}`
-        count.push(Number(total.innerHTML))
+        
         total.innerHTML = ''
-       
+        
     }
 }
 
 function c() {
     total.innerHTML = ''
     acumulador.innerHTML = ''
+    count = []
+}
+
+function flutuante() {
+    if (total.innerHTML.indexOf('.') == -1){
+        total.innerHTML += '.'
+    }
 }
 
 function ce() {
     total.innerHTML = total.innerHTML.substring(0, total.innerHTML.length -1)
+}
+
+function resultado() {
+    count.push(acumulador.innerHTML.split(' ', ''))
+    window.alert(count)
 }
