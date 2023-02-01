@@ -15,10 +15,11 @@ function CalcAction(action) {
         return
     } else {
         acumulador.innerHTML += ` ${total.innerHTML} ${action}`
-        
+        count.push(Number(total.innerHTML))
         total.innerHTML = ''
         
     }
+
 }
 
 function c() {
@@ -38,6 +39,6 @@ function ce() {
 }
 
 function resultado() {
-    count.push(acumulador.innerHTML.split(' ', ''))
+    count.push(Number(total.innerHTML))
     window.alert(count)
 }
