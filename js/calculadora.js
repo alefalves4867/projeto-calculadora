@@ -27,7 +27,5 @@ function c() {
 }
 
 function ce() {
-    total.innerHTML = ''
-    var acm = document.getElementById('res1').innerHTML
-    acm = acm.substring(0, acm.innerHTML.length -1)
+    total.innerHTML = total.innerHTML.substring(0, total.innerHTML.length -1)
 }
