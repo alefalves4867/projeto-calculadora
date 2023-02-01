@@ -91,8 +91,10 @@ td:hover {
 
 td:active {
     transform: scale(95%);
-    background-color: white;
+    
 }
+
+
 
 .claro {
     background-color: var(--a4);

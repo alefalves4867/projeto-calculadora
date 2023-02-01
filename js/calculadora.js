@@ -14,7 +14,7 @@ function CalcAction(action) {
     if (total.innerHTML.length == 0){
         return
     } else {
-        acumulador.innerHTML += `${total.innerHTML} ${action}`
+        acumulador.innerHTML += ` ${total.innerHTML} ${action}`
         count.push(Number(total.innerHTML))
         total.innerHTML = ''
         window.alert(count)
