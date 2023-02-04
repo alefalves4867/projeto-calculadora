@@ -1,4 +1,4 @@
-
+/*
 var count = []
 var soma = 0
 
@@ -61,4 +61,66 @@ function resultado() {
         
         window.alert(soma)
     }
+    */
+
+/*let valores = []
+let sinais = []
+let telaPrincipal = document.querySelector('#total')
+let telaSec = document.querySelector('#res1')
+function c(){
+    valores = []
+    telaPrincipal.innerHTML = ''
+    telaSec.innerHTML = ''
+    sinais = []
 }
+function ce(){
+    
+    telaPrincipal.innerHTML = telaPrincipal.innerHTML.substring(0, telaPrincipal.innerHTML.length -1)
+    
+    
+}
+/*num*/
+/*
+
+function AddNumber(num){
+    
+    if(telaPrincipal.innerHTML.length < 10){
+        telaPrincipal.innerHTML += num
+
+    }
+
+    if (telaSec.innerHTML.length%2 == 0 && telaSec.innerHTML.length > 0){
+        window.alert(telaSec.innerHTML.length)
+    } 
+}
+
+function CalcAction(acao){
+    if(telaPrincipal.innerHTML.length == 0){
+        return
+    } else {
+
+      
+        valores.push(Number(telaPrincipal.innerHTML))
+        /*window.alert(typeof(valores))
+        window.alert(valores)*//*
+        sinais.push(acao)
+        
+        telaSec.innerHTML += telaPrincipal.innerHTML + ' ' + acao + ' '
+        telaPrincipal.innerHTML = ''
+    }
+}
+function flutuante() {
+    if (telaPrincipal.innerHTML.indexOf('.') == -1){
+        telaPrincipal.innerHTML += '.'
+    }
+}
+
+function resultado() {
+    if(valores.length == 0){
+        return
+    } else {
+        
+        
+    }
+}
+*/
