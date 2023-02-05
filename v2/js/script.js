@@ -136,6 +136,3 @@ buttons.map((el) => {
         }
     })
 })
-
-
-console.log(buttons)
