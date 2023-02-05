@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor0: #AAA8AD;
+    --cor1: #59595B; 
+    --cor2: #3F3E3C; 
+    --cor3: #1E1F23;
+    --cor4: #0D0D0D;
+}
+
+body {
+    font-family: Helvetica;
+    background-color: var(--cor4);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: var(--cor0);
+    padding: 0.5em;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+main > h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: var(--cor2);
+}
+
+#operations {
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+#previous-operation, #current-operation {
+    overflow-wrap: break-word;
+    padding: .2em;
+    color: #0D0D0D;
+}
+
+#previous-operation {
+    color: var(--cor2) !important;
+
+}
+
+#current-operation {
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 750;
+}
+
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*Define a quantidade de colunas*/
+    gap: 3px;
+}
+
+#buttons-container > button{
+    border: 1px solid transparent;
+    border-radius: 0px;
+    height: 4em;
+    font-size: 1.25em;
+    background-color: var(--cor1);
+    cursor: pointer;
+    color: snow;
+    
+}
+
+#buttons-container > .number {
+    background-color: snow;
+    color: black;
+}
+
+#buttons-container button:active {
+    transform:scale(96%);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.382);
+}
+
+#equal-btn {
+    background-color: #4380a1 !important;
+    grid-column: span 2; /*Aumenta a quantidade que o equal_btn está ocupando*/
+}
